@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css"/>
+
+    <!--Để sử dụng cần copy 2 thẻ link này-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="toastbar.css"/>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="toast"></div>
+
+    <div>
+        <!--Ngữ pháp sử dụng hàm :
+            showToastBar(Tiêu đề,Nội dung,Kiểu,Thời gian)
+        
+            ► Tiêu đề : Tiêu đề của thông báo
+            ► Nội dung : Nội dung chi tiết của thông báo
+            ► Kiểu : Có 3 kiểu 'success','error','warn'
+              ứng với 3 màu xanh, đỏ, đen
+            ► Thời gian : Thời gian mà toast bar xuất hiện, đơn vị theo millisecond.
+        -->
+        <div onclick="showToastBar('Thành công!','Bạn đã đăng ký thành công tài khoản tại Website.','success',2000)" 
+        class="btn btn--success">Test thông báo Thành công</div>
+        <div onclick="showToastBar('Thất bại!','Có lỗi xảy ra, vui lòng liên hệ quản trị viên.','error',2000)"  
+        class="btn btn--danger">Test thông báo Thất bại</div>
+        <div onclick="showToastBar('Thông báo :','Bạn vừa nhận một email mới. Hãy kiểm tra hòm thư.','notice',2000)"  
+        class="btn btn--notice">Test thông báo bình thường</div>
+    </div>
+
+    <!--Để sử dụng cần copy thẻ script này-->
+    <script src="toastbar.js"></script>
+
+</body>
+
+</html>
