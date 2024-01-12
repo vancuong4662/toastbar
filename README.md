@@ -23,6 +23,6 @@ Hướng dấn sử dụng :
             ► Thời gian : Thời gian mà toast bar xuất hiện, đơn vị theo millisecond.'
 Ví dụ, tôi có một cái nút bấm và muốn khi bấm vào nó thì hiện ra một thông báo. Tôi sẽ viết như sau :
 ```html
-<div onclick="showToastBar('Thông báo :','Bạn vừa nhận một email mới. Hãy kiểm tra hòm thư.','notice',2000)">Test thông báo</div>
+<button onclick="showToastBar('Thông báo :','Bạn vừa nhận một email mới. Hãy kiểm tra hòm thư.','notice',2000)">Test thông báo</button>
 ```
 Ngoài ra bạn cũng thể tham khảo trang index.html của tôi để biết thêm các cách tùy biến.
